@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600|Raleway');
+$section-bottom-margin: 5rem;
+$dark-red: #8b0000;
+.dark-red {
+  color: #8b0000;
+}
+
+.picture {
+  width: 100%;
+}
+
+$dark-red: #8b0000;
+.bright-red {
+  color: red;
+}
+
+.call-me-maybe {
+  //padding: 0;
+  font-size: 4rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.contact-method {
+  flex-grow: 1;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-method > a {
+  color: red
+}
+
+.contact-text > h2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contact-text {}
+
+.contact-container {
+  margin: 0 auto;
+  max-width: 90%;
+  margin-bottom: 4rem;
+}
+
+i {
+  color: white;
+  background-color: black;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contact-method {
+  background: white;
+  margin: 5px;
+  filter: drop-shadow(0px 2px 2px black);
+}
+
+.web-developer {
+  // filter: drop-shadow(0px 50px 10px white);
+}
+
+.contact-method > a {
+  width: 50%;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.contact-method > a:hover {
+  color: $dark-red;
+}
+
+.contact-method:hover {
+  filter: drop-shadow(0px 2px 2px $dark-red);
+}
+
+.contact {
+  background: white;
+  color: black;
+  padding: 1rem;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.contact-headline {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  text-align: right;
+  font-size: $section-bottom-margin;
+  text-align: right;
+  font-weight: 600;
+}
+
+body {
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-family: 'Jura', sans-serif;
+}
+
+.container-fluid,
+.row {
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.intro-text {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 1rem;
+  p {
+    padding: 2rem;
+  }
+}
+
+.intro-line-5 {
+  text-align: right;
+}
+
+.intro-headline {
+  font-size: $section-bottom-margin*3;
+  text-align: center;
+  margin: $section-bottom-margin;
+  font-weight: 600;
+}
