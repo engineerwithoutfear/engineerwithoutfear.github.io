@@ -1,21 +1,39 @@
-@import url("https://fonts.googleapis.com/css?family=Jura:300,400,500,600|Raleway");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 * {
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 html {
-  font-family: "Helvetica", "helvetica neue";
-  background: white;
-  color: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 255, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
 }
 
 nav {
-  background: rgba(0, 0, 0, 0.9);
+  font-family: Roboto Slab;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   width: 100%;
   position: fixed;
   z-index: 10;
   font-size: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav ul {
@@ -23,6 +41,13 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 nav li {
@@ -33,36 +58,36 @@ nav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
 }
 
-.nav-list:hover {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+.nav-list > a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-list > a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
 
 li.nav-logo {
   max-width: 0;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.fixed-nav li.nav-logo {
+.slide-in-nav li.nav-logo {
   max-width: 100px;
-}
-
-.fixed-nav nav {
-  box-shadow: 0 1px rgba(0, 0, 0, 0.6);
 }
 
 li.nav-logo a {
@@ -71,17 +96,25 @@ li.nav-logo a {
 
 nav a {
   text-decoration: none;
-  margin: 0.5rem;
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.95);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   text-transform: uppercase;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 5vh;
 }
 
 .page-container {
+  font-family: Noto Sans;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,6 +148,7 @@ nav a {
       -ms-flex: 1;
           flex: 1;
   background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .card-intro {
@@ -125,7 +159,7 @@ nav a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 20rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -138,13 +172,16 @@ nav a {
 
 .intro-name {
   font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 .intro-subtitle {
   font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
 .intro-identity {
@@ -196,24 +233,24 @@ nav a {
 }
 
 .intro-summary {
-  margin-top: 10px;
-  line-height: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.25rem;
 }
 
 .container-intro-image,
 .container-intro-summary-lines {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .container-intro-image {
-  margin-top: 45px;
+  margin-top: 60px;
   margin-bottom: 15px;
 }
 
 .container-intro-summary-lines {
   margin-top: 15px;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 
 .intro-summary {
@@ -222,18 +259,18 @@ nav a {
 
 .my-face {
   border-radius: 50%;
-  border: 5px solid rgba(0, 0, 0, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.25);
 }
 
 .project-name {
   background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 215, 0, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   position: absolute;
+  display: none;
   height: 1.25rem;
   font-size: 0.5rem;
-  padding: 5px;
-  padding-left: 15px;
   width: 100%;
   top: 0;
   display: -webkit-box;
@@ -246,34 +283,45 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 3;
+  margin-top: -1.25rem;
+}
+
+.project-name > p {
+  margin: 5px;
+  margin-left: 15px;
 }
 
 .project-demo {
+  margin-top: 1.25rem;
   position: relative;
+  opacity: 0.9;
   width: 100%;
   height: 200px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project-demo > img {
   z-index: 1;
-  position: absolute;
   max-height: 100%;
   max-width: 100%;
 }
 
+.project-summary {
+  background: rgba(0, 0, 255, 0);
+}
+
 .project-tools {
   font-size: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 255, 0.05);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,10 +338,15 @@ nav a {
   min-height: 2rem;
 }
 
+.project-tools > p {
+  line-height: 1.1em;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .project-summary,
 .project-links {
   font-size: 0.7rem;
-  border: 1px solid rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -311,6 +364,7 @@ nav a {
 }
 
 .project-summary > p {
+  text-align: center;
   margin: 1rem;
 }
 
@@ -332,18 +386,28 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
   min-height: 2rem;
+}
+
+.project-links .fa-codepen {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-links {
+  background: rgba(0, 0, 255, 0.05);
 }
 
 .project-links > a:hover {
   font-size: 1.6rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 255, 0.1);
   color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: font-size, color, background 0.1s ease-in-out;
+  transition: font-size, color, background 0.1s ease-in-out;
 }
 
 .container-project-card {
-  background: grey;
+  background: rgba(255, 255, 255, 0.5);
   min-width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,13 +426,15 @@ nav a {
           align-items: center;
   box-shadow: 5px 5px rgba(128, 128, 128, 0.4);
   margin: 1rem;
-  -webkit-transition: translateY 0.1s ease-in-out;
-  transition: translateY 0.1s ease-in-out;
+  opacity: 0.97;
+  -webkit-transition: translateY, opacity 0.1s ease-in-out;
+  transition: translateY, opacity 0.1s ease-in-out;
 }
 
 .container-project-card:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+  opacity: 1;
 }
 
 .container-demos {
@@ -399,7 +465,7 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
   min-height: 150vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -420,8 +486,6 @@ nav a {
           flex-direction: column;
   max-width: 100%;
   padding: 1rem;
-  padding-top: 10%;
-  padding-bottom: 10%;
   background: rgba(0, 0, 0, 0.25);
   position: relative;
 }
@@ -437,6 +501,13 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container-contact-methods > a {
@@ -451,6 +522,7 @@ nav a {
       -ms-flex: 1;
           flex: 1;
   min-width: 70%;
+  margin: .1rem;
 }
 
 .contact-method {
@@ -479,7 +551,7 @@ nav a {
 }
 
 .contact-method p:hover {
-  color: #8b0000;
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: underline;
 }
 
@@ -488,10 +560,10 @@ a:link {
 }
 
 .contact-method > * {
-  background: rgba(0, 0, 0, 0.98);
-  color: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.9);
   padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   min-width: 50%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -501,13 +573,13 @@ a:link {
 }
 
 .contact-method > *:nth-child(2) {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 .contact-method > *:nth-child(1) {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
 .contact-method i {
@@ -515,12 +587,12 @@ a:link {
 }
 
 .contact-method > a:hover {
-  color: #8b0000;
+  color: navy;
 }
 
 .contact-method p {
   background: rgba(255, 255, 255, 0.5);
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 footer {
@@ -569,9 +641,18 @@ footer > p {
             flex-direction: column;
   }
 
+  .container-contact {
+    padding: 0;
+  }
+
   .contact-method > * {
-    border-radius: 15px;
+    border-radius: 2px;
     width: 100%;
+  }
+
+  .container-contact-methods > a {
+     justify-content: space-around;
+    width: 90%;
   }
 
   .container-demos {
@@ -588,7 +669,6 @@ footer > p {
   }
 
   .container-project-card {
-    background: grey;
     width: 100%;
     height: 100%;
   }
@@ -599,5 +679,10 @@ footer > p {
 
   .card-intro {
     width: 90%;
+  }
+}
+@media (max-width: 1480px) {
+  .container-project-card {
+    min-width: 33%;
   }
 }
