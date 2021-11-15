@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>EWF @gh.io v3</title>
-  <!-- 
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EWF @gh.io v3</title>
+    <!-- 
 
  _   _               _                                         
 | | | |             | |                                        
@@ -33,189 +33,194 @@ __        __
                      
  -->
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111742188-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111742188-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-111742188-1");
+    </script>
+  </head>
 
-  gtag('config', 'UA-111742188-1');
-</script>
-
-  
-</head>
-
-<body>
-  <nav id="main">
-  <ul>
-    <li class="nav-logo">
-      <a href="#">EWF</a>
-    </li>
-    <li class="nav-list">
-      <a href="#intro">About</a>
-    </li>
-    <li class="nav-list">
-      <a href="#projects">Projects</a>
-    </li>
-    <li class="nav-list">
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
-<a name="intro"></a>
-<div class="page-container">
-  <div class="container-intro">
-    <div class="card-intro">
-      <div class="container-intro-image">
-        <p class="intro-name">Cassandra Newcomer</p>
-        <img class="my-face" src="./uploads/pics/fancy_me.jpg">
-      </div>
-      <div class="container-intro-summary-lines">
-        <div class="intro-identity">
-          <p class="intro-subtitle">Software Engineer</p>
-          <p class="intro-summary">I am an engineer based in NYC. I'm currently a Computer Science student at Queens College, where I can usually be found practicing my programming skills and/or building projects ranging all across the software-hardware technological spectrum. When I'm not in class or rummaging through several layers of abstraction in an IDE, I like to read hard science fiction, philosophy, and anything that might help me improve my understanding of the world and all the complex systems that lie within it.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a name="projects"></a>
-  <div class="container-projects">
-    <div class="container-demos">
-      <div class="container-project-card">
-        <div class="project-demo">
-          <div class="project-name">
-            <p>Hammertime </p>
+  <body>
+    <nav id="main">
+      <ul>
+        <li class="nav-logo">
+          <a href="#">EWF</a>
+        </li>
+        <li class="nav-list">
+          <a href="#intro">About</a>
+        </li>
+        <!-- <li class="nav-list">
+          <a href="#projects">Projects</a>
+        </li> -->
+        <li class="nav-list">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <a name="intro"></a>
+    <div class="page-container">
+      <div class="container-intro">
+        <div class="card-intro">
+          <div class="container-intro-image">
+            <p class="intro-name">Cassandra Newcomer</p>
+            <img class="my-face" src="./uploads/pics/fancy_me.jpg" />
           </div>
-          <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/hammertime-desktop-600.png">
-        </div>
-        <div class="project-tools">
-          <p>HTML5/CSS3, React, React-Router </p>
-        </div>
-        <div class="project-summary">
-          <p>Study for the Ham radio exams.</p>
-        </div>
-        <div class="project-links">
-          <a href="https://engineerwithoutfear.github.io/hammertime"> <i class="fa fa-github" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <div class="container-project-card">
-        <div class="project-demo">
-          <div class="project-name">
-            <p>Unit Circle </p>
-          </div>
-          <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/sine-cosine-desktop-600.png">
-        </div>
-        <div class="project-tools">
-          <p>HTML5/CSS3, p5.js, HTML5 Canvas </p>
-        </div>
-        <div class="project-summary">
-          <p>The relation between wave and circle.</p>
-        </div>
-        <div class="project-links"> <a href="http://engineerwithoutfear.github.io/web_dev/physics-sims/origin-sine-cosine/index.html"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="https://codepen.io/engineerwithoutfear/pen/VjpPKa"> <i class="fa fa-codepen" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <div class="container-project-card">
-        <div class="project-demo">
-          <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/rqm-desktop-600.png">
-          <div class="project-name">
-            <p>Random Quote Machine </p>
+          <div class="container-intro-summary-lines">
+            <div class="intro-identity">
+              <p class="intro-subtitle">Software Engineer</p>
+              <p class="intro-summary">
+                I am currently a software engineer at AWS. When I'm not at work and/or
+                rummaging through several layers of abstraction in an IDE, I like to read hard science fiction, philosophy, and anything that might
+                help me improve my understanding of the world and all the complex systems that lie within it. 
+              </p>
+            </div>
           </div>
         </div>
-        <div class="project-tools">
-          <p>HTML5/CSS3, React, Twitter Web Intents</p>
-        </div>
-        <div class="project-summary">
-          <p>Displays tweetable quotes.</p>
-        </div>
-        <div class="project-links">
-          <a href="http://engineerwithoutfear.github.io/web_dev/free-code-camp/random-quote-machine/index.html">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://codepen.io/engineerwithoutfear/pen/pbzBXw">
-            <i class="fa fa-codepen" aria-hidden="true"></i>
-          </a>
-        </div>
       </div>
-      <div class="container-project-card">
-        <div class="project-demo">
-          <div class="project-name">
-            <p>Galactic Translator (Star Trek) </p>
+      <!-- <a name="projects"></a>
+      <div class="container-projects">
+        <div class="container-demos">
+          <div class="container-project-card">
+            <div class="project-demo">
+              <div class="project-name">
+                <p>Hammertime</p>
+              </div>
+              <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/hammertime-desktop-600.png" />
+            </div>
+            <div class="project-tools">
+              <p>HTML5/CSS3, React, React-Router</p>
+            </div>
+            <div class="project-summary">
+              <p>Study for the Ham radio exams.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://engineerwithoutfear.github.io/hammertime"> <i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
           </div>
-          <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/galactic-translator-desktop-600.png">
-        </div>
-        <div class="project-tools">
-          <p>HTML5/CSS3, Javascript, React </p>
-        </div>
-        <div class="project-summary">
-          <p>Wiki markdown previewer. Typographical support for multiple species.</p>
-        </div>
-        <div class="project-links">
-          <a href="http://engineerwithoutfear.github.io/web_dev/free-code-camp/galactic-translator-react/index.html">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://codepen.io/engineerwithoutfear/pen/mBryKy">
-            <i class="fa fa-codepen" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-      <div class="container-project-card">
-        <div class="project-demo">
-          <div class="project-name">
-            <p>Friction Block </p>
-          </div>
-          <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/friction-block-desktop-600.png">
-        </div>
-        <div class="project-tools">
-          <p>HTML5/CSS3, p5.js, HTML5 Canvas </p>
-        </div>
-        <div class="project-summary">
-          <p>Interactive static/kinetic friction visualization.</p>
-        </div>
-        <div class="project-links">
-          <a href="http://engineerwithoutfear.github.io/web_dev/physics-sims/friction-block/index.html">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://codepen.io/engineerwithoutfear/pen/pEBomZ">
-            <i class="fa fa-codepen" aria-hidden="true">
-            </i>
-          </a>
-        </div>
-      </div>
-      <div class="container-project-card">
-        <div class="project-demo">
-          <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/weather-report-desktop2_600.png">
-          <div class="project-name">
-            <p>Weather Report </p>
-          </div>
-        </div>
-        <div class="project-tools">
-          <p>HTML5/CSS3, Javascript, jQuery </p>
-        </div>
-        <div class="project-summary">
-          <p>View the weather for your location.</p>
-        </div>
-        <div class="project-links">
-          <a href="http://engineerwithoutfear.github.io/web_dev/free-code-camp/weather-report/index.html">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://codepen.io/engineerwithoutfear/pen/KzbJrv">
-            <i class="fa fa-codepen" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a name="contact"></a>
-  <div class="container-contact">
-    <div class="container-contact-methods">
-      <!--       <a href="https://codepen.io/engineerwithoutfear/">
+          <div class="container-project-card">
+            <div class="project-demo">
+              <div class="project-name">
+                <p>Unit Circle</p>
+              </div>
+              <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/sine-cosine-desktop-600.png" />
+            </div>
+            <div class="project-tools">
+              <p>HTML5/CSS3, p5.js, HTML5 Canvas</p>
+            </div>
+            <div class="project-summary">
+              <p>The relation between wave and circle.</p>
+            </div>
+            <div class="project-links">
+              <a href="http://engineerwithoutfear.github.io/web_dev/physics-sims/origin-sine-cosine/index.html"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+              <a href="https://codepen.io/engineerwithoutfear/pen/VjpPKa"> <i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </div>
+          </div> -->
+          <!-- <div class="container-project-card">
+            <div class="project-demo">
+              <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/rqm-desktop-600.png" />
+              <div class="project-name">
+                <p>Random Quote Machine</p>
+              </div>
+            </div>
+            <div class="project-tools">
+              <p>HTML5/CSS3, React, Twitter Web Intents</p>
+            </div>
+            <div class="project-summary">
+              <p>Displays tweetable quotes.</p>
+            </div>
+            <div class="project-links">
+              <a href="http://engineerwithoutfear.github.io/web_dev/free-code-camp/random-quote-machine/index.html">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://codepen.io/engineerwithoutfear/pen/pbzBXw">
+                <i class="fa fa-codepen" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div> -->
+          <!-- <div class="container-project-card">
+            <div class="project-demo">
+              <div class="project-name">
+                <p>Galactic Translator (Star Trek)</p>
+              </div>
+              <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/galactic-translator-desktop-600.png" />
+            </div>
+            <div class="project-tools">
+              <p>HTML5/CSS3, Javascript, React</p>
+            </div>
+            <div class="project-summary">
+              <p>Wiki markdown previewer. Typographical support for multiple species.</p>
+            </div>
+            <div class="project-links">
+              <a href="http://engineerwithoutfear.github.io/web_dev/free-code-camp/galactic-translator-react/index.html">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://codepen.io/engineerwithoutfear/pen/mBryKy">
+                <i class="fa fa-codepen" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div> -->
+          <!-- <div class="container-project-card">
+            <div class="project-demo">
+              <div class="project-name">
+                <p>Friction Block</p>
+              </div>
+              <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/friction-block-desktop-600.png" />
+            </div>
+            <div class="project-tools">
+              <p>HTML5/CSS3, p5.js, HTML5 Canvas</p>
+            </div>
+            <div class="project-summary">
+              <p>Interactive static/kinetic friction visualization.</p>
+            </div>
+            <div class="project-links">
+              <a href="http://engineerwithoutfear.github.io/web_dev/physics-sims/friction-block/index.html">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://codepen.io/engineerwithoutfear/pen/pEBomZ">
+                <i class="fa fa-codepen" aria-hidden="true"> </i>
+              </a>
+            </div>
+          </div> -->
+          <!-- <div class="container-project-card">
+            <div class="project-demo">
+              <img src="http://engineerwithoutfear.github.io/uploads/portfolio-screencaps/weather-report-desktop2_600.png" />
+              <div class="project-name">
+                <p>Weather Report</p>
+              </div>
+            </div>
+            <div class="project-tools">
+              <p>HTML5/CSS3, Javascript, jQuery</p>
+            </div>
+            <div class="project-summary">
+              <p>View the weather for your location.</p>
+            </div>
+            <div class="project-links">
+              <a href="http://engineerwithoutfear.github.io/web_dev/free-code-camp/weather-report/index.html">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://codepen.io/engineerwithoutfear/pen/KzbJrv">
+                <i class="fa fa-codepen" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div> -->
+        <!-- </div>
+      </div> -->
+      <a name="contact"></a>
+      <div class="container-contact">
+        <div class="container-contact-methods">
+          <!--       <a href="https://codepen.io/engineerwithoutfear/">
         <div class="contact-method" href="https://codepen.io/engineerwithoutfear/">
           <i class="fa fa-codepen" aria-hidden="true"></i>
           <p>CodePen</p>
@@ -227,45 +232,50 @@ __        __
           <p>Github</p>
         </div>
       </a> -->
-      <a href="https://www.linkedin.com/in/cassandra-newcomer-11551857">
-        <div class="contact-method">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-          <p>LinkedIn </p>
+          <a href="https://www.linkedin.com/in/cassandra-newcomer-11551857">
+            <div class="contact-method">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <p>LinkedIn</p>
+            </div>
+          </a>
+          <a href="https://github.com/engineerwithoutfear">
+            <div class="contact-method">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <p>GitHub</p>
+            </div>
+          </a>
+          <a href="https://github.com/engineerwithoutfear/engineerwithoutfear.github.io/raw/master/uploads/Resume%20-%20Cassandra%20Newcomer.pdf">
+            <div class="contact-method">
+              <i class="fa fa-file" aria-hidden="true"></i>
+              <p>Resume</p>
+            </div>
+          </a>
+          <a href="https://medium.com/@engineerwithoutfear">
+            <div class="contact-method">
+              <i class="fa fa-medium" aria-hidden="true"></i>
+              <p>Writing</p>
+            </div>
+          </a>
+          <a href="mailto:cassandra.newcomer[atthis]gmail[dot]com">
+            <div class="contact-method">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <p>E-mail</p>
+            </div>
+          </a>
+          <a href="http://www.engineerwithoutfear.com">
+            <div class="contact-method">
+              <i class="fa fa-link" aria-hidden="true"></i>
+              <p>Hobbies</p>
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="https://github.com/engineerwithoutfear/engineerwithoutfear.github.io/raw/master/uploads/Resume%20-%20Cassandra%20Newcomer.pdf">
-        <div class="contact-method">
-          <i class="fa fa-file" aria-hidden="true"></i>
-          <p>Resume</p>
-        </div>
-      </a>
-      <a href="https://medium.com/@engineerwithoutfear">
-        <div class="contact-method"><i class="fa fa-medium 
-      " aria-hidden="true"></i>
-          <p>Writing </p>
-        </div>
-      </a>
-      <a href="mailto:cassandra.newcomer[atthis]gmail[dot]com">
-        <div class="contact-method">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <p>E-mail</p>
-        </div>
-      </a>
-      <A href="http://www.engineerwithoutfear.com">
-        <div class="contact-method">
-          <i class="fa fa-link" aria-hidden="true"></i>
-          <p>Hobbies</p>
-        </div>
-      </a>
+      </div>
+      <footer>
+        <p>No electrons were harmed in the making of this site.</p>
+      </footer>
     </div>
-  </div>
-  <footer>
-    <p>No electrons were harmed in the making of this site.</p>
-  </footer>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script  src="js/index.js"></script>
-
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
