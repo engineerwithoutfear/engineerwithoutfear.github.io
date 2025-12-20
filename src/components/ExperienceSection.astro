@@ -1,0 +1,27 @@
+---
+import ExperienceCard from "./ExperienceCard.astro";
+
+interface Experience {
+  role: string;
+  company: string;
+  dates: string;
+  tech?: string;
+  details: string[];
+}
+
+interface Props {
+  experiences: Experience[];
+}
+
+const { experiences } = Astro.props;
+---
+
+<div class="experience-entries-group">
+  {
+    experiences.map((exp, index) => (
+      <div class={index < experiences.length - 1 ? "card-spacing" : ""}>
+        <ExperienceCard experience={exp} />
+      </div>
+    ))
+  }
+</div>

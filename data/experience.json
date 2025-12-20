@@ -1,0 +1,80 @@
+{
+  "professional": [
+    {
+      "role": "Software Engineer",
+      "company": "Amazon Web Services (AWS)",
+      "dates": "2021–2022",
+      "tech": "Java, AWS Cognito, AWS SSO/IAM, AWS DynamoDB, AWS S3, AWS CDK",
+      "details": [
+        "Developed microservices for interfacing with and managing the datastores underlying various AWS Identity product offerings, with use cases ranging from enterprise workforce integrations (Microsoft AD) to consumer-facing identity provisioning (AWS Cognito)",
+        "Maintained underlying CI/CD infrastructure for outgoing code changes, performed load testing, and monitored performance metrics for an AWS Tier 1 service spanning 25+ regions and 80+ global availability zones while preserving a 99.999% uptime SLA with production traffic serving millions of requests per second"
+      ]
+    },
+    {
+      "role": "Combat Robotics Engineer",
+      "company": "Independent",
+      "dates": "2022–2023",
+      "tech": "",
+      "details": [
+        "Maintained and repaired a 250lb heavyweight combat robot under competition constraints",
+        "Diagnosed mechanical and electrical failures between matches and implemented rapid fixes under time pressure",
+        "Worked on motor control, power delivery, and safety-critical systems in a live competitive environment"
+      ]
+    },
+    {
+      "role": "Software Engineering Sabbatical",
+      "company": "Independent",
+      "dates": "2023–present",
+      "tech": "HTML5/CSS3, TypeScript, Astro, Tailwind, Cursor, Cloudflare Pages",
+      "details": [
+        "Built and deployed a personal website for technical writing and project documentation using Astro, TypeScript, Tailwind, and Cloudflare Pages",
+        "Maintained production-quality workflows including CI/CD, static site generation, and cloud deployment",
+        "Kept skills current in modern frontend tooling and deployment workflows"
+      ]
+    }
+  ],
+  "internships": [
+    {
+      "role": "Software Engineering Intern",
+      "company": "Convoy",
+      "dates": "2019",
+      "tech": "HTML5/CSS3, TypeScript, React, GraphQL, Node.js, AWS S3",
+      "details": [
+        "Researched, designed, and developed a new application feature (Bill of Lading generator) for shipments tendered through Convoy Connect",
+        "Wrote code to query databases for shipment details, transform/insert the data into a PDF, store the result in an Amazon S3 bucket, and generate a signed URL to securely display the end result to the user in-browser"
+      ]
+    },
+    {
+      "role": "Software Engineering Intern",
+      "company": "Oscar Health",
+      "dates": "2019",
+      "tech": "HTML5/CSS3, JavaScript, React, React Native, Redux, Python, Flask",
+      "details": [
+        "Built a new document center feature for the Oscar desktop and mobile apps",
+        "Created an API that interfaces with services from across Oscar's internal codebase to surface account-specific insurance forms and display the output in a user-friendly format"
+      ]
+    },
+    {
+      "role": "Software Engineering Intern",
+      "company": "IBM",
+      "dates": "2018",
+      "tech": "Java EE, JavaScript, React",
+      "details": [
+        "Wrote a full stack web application that ingests and analyzes social media complaints about the NYC subway system",
+        "Created a Java EE back end that interfaces with the Twitter API, performs scheduled batch processing, serves static files, and provides the REST API for an interactive data visualization dashboard",
+        "Developed internal JavaScript tooling to automate migration of repository issues from GitLab to GitHub Enterprise while preserving cross-issue reference links"
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "City College of New York",
+      "dates": "2016–2017",
+      "tech": "HTML5 Canvas, JavaScript, Node.js, Jekyll",
+      "details": [
+        "Built interactive, browser-native math and science visualizations for educational use by the physics department",
+        "Used static site generator to update and maintain organization's webpage",
+        "Created a REST API microservice to fetch, parse, and cache data from the GitHub API"
+      ]
+    }
+  ]
+}

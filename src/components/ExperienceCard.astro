@@ -1,0 +1,40 @@
+---
+interface Experience {
+  role: string;
+  company: string;
+  dates: string;
+  tech?: string;
+  details: string[];
+}
+
+const { experience } = Astro.props;
+---
+
+<div class="card">
+  <div class="experience-header">
+    <div class="experience-company">
+      <p class="experience-role">
+        {experience.role}
+        {
+          experience.company && (
+            <>
+              <span class="sep">{" | "}</span>
+              {experience.company}
+            </>
+          )
+        }
+      </p>
+      <p class="experience-dates">{experience.dates}</p>
+    </div>
+    {
+      experience.tech  && (
+        <div class="experience-tech">
+          <p>{experience.tech}</p>
+        </div>
+      )
+    }
+  </div>
+  <ul class="experience-details">
+    {experience.details.map((detail: string) => <li>{detail}</li>)}
+  </ul>
+</div>

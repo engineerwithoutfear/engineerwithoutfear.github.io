@@ -1,0 +1,113 @@
+---
+import Navigation from "../components/Navigation.astro";
+import ExperienceSection from "../components/ExperienceSection.astro";
+import experienceData from "../data/experience.json";
+import "../styles/style.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Cassandra Newcomer - Full-stack SWE" />
+    <title>EWF @gh.io v4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link
+      rel="stylesheet prefetch"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCMCBC93MS"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-QCMCBC93MS");
+    </script>
+  </head>
+  <body>
+    <Navigation />
+
+    <a name="intro"></a>
+    <div class="container first">
+      <h2 class="section-title">Cassandra Newcomer</h2>
+      <div class="cards">
+        <div class="card">
+          <p class="intro-summary">
+            Full-stack software engineer with experience in large scale distributed systems and modern frontend
+            development.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a name="experience"></a>
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="cards">
+        {
+          experienceData.professional && experienceData.professional.length > 0 && (
+            <ExperienceSection experiences={experienceData.professional} />
+          )
+        }
+        {
+          experienceData.internships && experienceData.internships.length > 0 && (
+            <ExperienceSection experiences={experienceData.internships} />
+          )
+        }
+      </div>
+    </div>
+
+    <a name="contact"></a>
+    <div class="container last">
+      <h2 class="section-title">Contact</h2>
+      <div class="container-contact-methods">
+        <a href="http://www.engineerwithoutfear.com">
+          <div class="contact-method">
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <p>Personal Website</p>
+          </div>
+        </a>
+        <a href="/uploads/Resume - Cassandra Newcomer.pdf">
+          <div class="contact-method">
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <p>Resume</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/cassandra-newcomer-11551857">
+          <div class="contact-method">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <p>LinkedIn</p>
+          </div>
+        </a>
+        <a href="https://github.com/engineerwithoutfear">
+          <div class="contact-method">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <p>GitHub</p>
+          </div>
+        </a>
+        <a href="mailto:cassandra.newcomer[atthis]gmail[dot]com">
+          <div class="contact-method">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>E-mail</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <p>No electrons were harmed in the making of this site.</p>
+    </footer> -->
+  </body>
+</html>

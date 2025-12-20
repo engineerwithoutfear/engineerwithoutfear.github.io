@@ -1,0 +1,42 @@
+---
+// Navigation component
+---
+
+<nav id="main">
+  <ul>
+    <li class="nav-logo">
+      <a href="#">EWF</a>
+    </li>
+    <li class="nav-list">
+      <a href="#intro">About</a>
+    </li>
+    <li class="nav-list">
+      <a href="#experience">Experience</a>
+    </li>
+    <li class="nav-list">
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  // Navigation scroll behavior
+  const intro = document.querySelector(".container.first");
+  const nav = document.querySelector("#main");
+  const topOfNav = intro ? intro.offsetHeight : 0;
+
+  function fixNav() {
+    if (window.scrollY >= topOfNav) {
+      document.body.classList.add("slide-in-nav");
+    } else {
+      document.body.classList.remove("slide-in-nav");
+    }
+  }
+
+  window.addEventListener("scroll", fixNav);
+</script>
+
+<style>
+
+  
+</style>

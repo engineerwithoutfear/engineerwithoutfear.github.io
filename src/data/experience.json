@@ -1,0 +1,81 @@
+{
+  "professional": [
+    {
+      "role": "Software Engineer",
+      "company": "Amazon Web Services (AWS)",
+      "dates": "2021 – 2022",
+      "tech": "Java, AWS Cognito, AWS SSO/IAM, AWS DynamoDB, AWS S3, AWS CDK",
+      "details": [
+        "Developed AWS Identity product offerings, performed load testing, and monitored performance metrics for an AWS Tier 1 service with production traffic serving millions of requests per second"
+      ]
+    },
+    {
+      "role": "Combat Robotics Engineer",
+      "company": "Battlebots World Championship VII",
+      "dates": "2022–2023",
+      "tech": "Team Overhaul",
+      "details": [
+        "Maintained and repaired a 250lb heavyweight combat robot ('Overhaul') under competition constraints"]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Independent",
+      "dates": "2023 – present",
+      "tech": "HTML5/CSS3, TypeScript, Astro, Tailwind, Cursor, Cloudflare Pages",
+      "details": [
+        "Built and deployed a personal website for technical writing and project documentation using Astro, TypeScript, Tailwind, and Cloudflare Pages",
+        "Kept skills current in modern frontend tooling and deployment workflows"
+      ]
+    }
+  ],
+  "internships": [
+    {
+      "role": "Undergraduate Teaching Assistant",
+      "company": "Queens College",
+      "dates": "2019",
+      "tech": "CSCI 381 (Advanced C++ Elective)",
+      "details": [
+        "Graded projects and exams"
+      ]
+    },
+
+{
+      "role": "Software Engineering Intern",
+      "company": "Convoy",
+      "dates": "2019",
+      "tech": "HTML5/CSS3, TypeScript, React, GraphQL, Node.js, AWS S3",
+      "details": [
+        "Researched, designed, and developed a new application feature (Bill of Lading generator) for shipments tendered through Convoy Connect"
+      ]
+    },
+ {
+      "role": "Software Engineering Intern",
+      "company": "Oscar Health",
+      "dates": "2019",
+      "tech": "HTML5/CSS3, JavaScript, React, React Native, Redux, Python, Flask",
+      "details": [
+        "Built a new document center feature displaying account-specific insurance forms for the Oscar desktop and mobile apps"
+      ]
+    },
+    {
+      "role": "Software Engineering Intern",
+      "company": "IBM",
+      "dates": "2018",
+      "tech": "Java EE, JavaScript, React",
+      "details": [
+        "Wrote a full stack web application that ingests and analyzes social media complaints about the NYC subway system using the Twitter API and Java EE batch processing"
+        
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "City College of New York",
+      "dates": "2016 – 2017",
+      "tech": "HTML5 Canvas, JavaScript, Node.js, Jekyll",
+      "details": [
+        "Built interactive, browser-native math and science visualizations for educational use by the physics department"
+        
+      ]
+    }
+   ]
+}
